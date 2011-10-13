@@ -1,0 +1,21 @@
+<html>
+<head>
+<link rel="stylesheet" href="player.css" type="text/css" media="screen" /> 
+<script type="text/javascript" src="jq.js"></script>
+<script type="text/javascript" src="player.js"></script>
+<script type="text/javascript">
+  $(document).ready (function () {
+    var pre = '119642__ramagochi__steps-on-leaf-16.'
+    build_player (1, pre + 'wav', pre + 'png', 20, 600, 100);
+    build_player (2, pre + 'wav', pre + 'png', 30, 600, 30);
+    build_player (3, pre + 'wav', pre + 'png', 20, 300, 20);
+  });
+</script>
+</head>
+<body>
+<div style="display:block;margin:10px"><div id=1 class='player'></div></div>
+<div style="display:block;margin:10px"><div id=2 class='player'></div></div>
+<div style="display:block;margin:10px"><div id=3 class='player'></div></div>
+<div id=log></div>
+</body>
+</html>
