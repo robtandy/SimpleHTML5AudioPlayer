@@ -1,10 +1,5 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-
-  <title>robtandy/SimpleHTML5AudioPlayer @ GitHub</title>
-
   <style type="text/css">
     body {
       margin-top: 1.0em;
@@ -27,24 +22,25 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+
   </style>
+
+
 <link rel="stylesheet" href="player.css" type="text/css" media="screen" /> 
 <script type="text/javascript" src="jq.js"></script>
 <script type="text/javascript" src="player.js"></script>
 <script type="text/javascript">
   $(document).ready (function () {
-    var pre = '119642__ramagochi__steps-on-leaf-16.'
-    build_player (1, pre + 'wav', pre + 'png', 20, 600, 100);
-    build_player (2, pre + 'wav', pre + 'png', 30, 600, 30);
-    build_player (3, pre + 'wav', pre + 'png', 20, 300, 20);
+    var pre = 'dandb.';
+    build_player (1, pre + 'ogg', pre + 'png', 20, 600, 100);
+    build_player (2, pre + 'ogg', pre + 'png', 30, 600, 30);
+    build_player (3, pre + 'ogg', pre + 'png', 20, 300, 20);
   });
 </script>
-
-
+  <title>robtandy/SimpleHTML5AudioPlayer @ GitHub</title>
 </head>
-
 <body>
-  <a href="http://github.com/robtandy/SimpleHTML5AudioPlayer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+ <a href="http://github.com/robtandy/SimpleHTML5AudioPlayer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
@@ -72,10 +68,12 @@
 
     <h2>Example</h2>
 
+
 <div style="display:block;margin:10px"><div id=1 class='player'></div></div>
 <div style="display:block;margin:10px"><div id=2 class='player'></div></div>
 <div style="display:block;margin:10px"><div id=3 class='player'></div></div>
 
+<p>Wav file from <a href="http://www.freesound.org/people/sandyrb/sounds/102340/">Freesound.org</a>
     <h2>Download</h2>
     <p>
       You can download this project in either
@@ -93,6 +91,5 @@
 
   </div>
 
-  
 </body>
 </html>
