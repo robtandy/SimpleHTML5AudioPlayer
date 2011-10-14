@@ -8,7 +8,7 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #35bfe7;
+      background-color: #ffffff;
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #000000;
     }
@@ -28,6 +28,19 @@
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
+<link rel="stylesheet" href="player.css" type="text/css" media="screen" /> 
+<script type="text/javascript" src="jq.js"></script>
+<script type="text/javascript" src="player.js"></script>
+<script type="text/javascript">
+  $(document).ready (function () {
+    var pre = '119642__ramagochi__steps-on-leaf-16.'
+    build_player (1, pre + 'wav', pre + 'png', 20, 600, 100);
+    build_player (2, pre + 'wav', pre + 'png', 30, 600, 30);
+    build_player (3, pre + 'wav', pre + 'png', 20, 300, 20);
+  });
+</script>
+
+
 </head>
 
 <body>
@@ -46,7 +59,10 @@
       <span class="small">by <a href="http://github.com/robtandy">robtandy</a></span></h1>
 
     <div class="description">
-      Simple audio player based around the HTML5 audio tag.  
+      Simple audio player based around the HTML5 audio tag.  It looks roughly like the player
+      at freesound.org It can show a player interface
+      on top of a png file of your choice (it was created with the idea that this png would
+      be the wave form of the audio).
     </div>
 
     <h2>Authors</h2>
@@ -54,6 +70,11 @@
 <h2>Contact</h2>
 <p> (rob.tandy@gmail.com)<br/>      </p>
 
+    <h2>Example</h2>
+
+<div style="display:block;margin:10px"><div id=1 class='player'></div></div>
+<div style="display:block;margin:10px"><div id=2 class='player'></div></div>
+<div style="display:block;margin:10px"><div id=3 class='player'></div></div>
 
     <h2>Download</h2>
     <p>
