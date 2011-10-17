@@ -24,6 +24,7 @@ The signature of build_player is
 
 ## EXAMPLE
 
+See http://robtandy.github.com/SimpleHTML5AudioPlayer/ for an example several players on a page formatted differently
 
 
 
